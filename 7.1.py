@@ -12,3 +12,12 @@ elif 9 <= kknumero <= 11:
     print(f'Kuukauden vuodenaika on {vuodenajat[2]}.')
 else:
     print('Kuukausia on 12 senkin hömelö.')
+
+# Vaihtoehtoinen ratkaisutapa, vaikuttaa paljon elegantimmalta
+
+vuodenajat2 = ("talvi", "kevät", "kesä", "syksy")
+
+kuukausi = int(input('Anna kuukauden numero: '))
+kuukausi = int((kuukausi % 12) / 3)
+
+print(f'Kuukauden vuodenaika on {vuodenajat2[kuukausi]}.')
